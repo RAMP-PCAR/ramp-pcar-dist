@@ -1115,6 +1115,10 @@ define([
                 //add the basemap
                 map.addLayer(baseLayer);
 
+                DataLoader.buildCsv({ url: '/test.csv' }).then(function (layer) {
+                    map.addLayer(layer);
+                });
+
                 /* Start - Show scalebar */
                 var scalebar = new EsriScalebar({
                     map: map,
