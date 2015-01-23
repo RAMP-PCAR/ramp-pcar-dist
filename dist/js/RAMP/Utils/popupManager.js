@@ -1,4 +1,4 @@
-/*! ramp-pcar 23-01-2015 16:12:21 : v. 5.0.0-7 
+/*! ramp-pcar 23-01-2015 16:19:10 : v. 5.0.0-8 
  * 
  * RAMP GIS viewer - Elk; Sample of an implementation of RAMP 
  **/
