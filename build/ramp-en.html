@@ -24,14 +24,10 @@ Reusable Accessible Mapping Platform
 <!-- RAMP CSS Start -->
 <link href="css/lib/lib.css" rel="stylesheet" type="text/css" />
 <link href="css/theme.less.css" rel="stylesheet" type="text/css" />
+<!-- We have a esri-cleaned.css (src/css/esri/) that's being rolled into
+     our theme.css. It's a stripped down file with all the garbage removed.
+     -Alex -->
 <!-- RAMP CSS End -->
-
-<!-- EsriCSSStart -->
-<!--<link media="screen" href="http://js.arcgis.com/3.10/js/esri/css/esri.css"
-      rel="stylesheet" rel="stylesheet">-->
-<link media="screen" href="http://js.arcgis.com/3.10/js/dojo/dijit/themes/tundra/tundra.css"
-      type="text/css" rel="stylesheet">
-<!-- EsriCSSEnd -->
 
 <!-- ARCGIS API: make sure there is a script tag in the head node of the
                  document to avoid "Cannot read property 'insertBefore' of
@@ -155,6 +151,11 @@ Reusable Accessible Mapping Platform
                 </button>
                 <div id="basemapGallery">
                 </div>
+            </li>
+            <li class="map-toolbar-item">
+                <button class="btn btn-xs map-toolbar-item-button button-none _tooltip" title="Disable queries on all WMS layers" id="uglyGetFiToggle">
+                    <i class="fa fa-map-marker"></i><span class="on-right">Disable Queries</span>
+                </button>
             </li>
             <li class="map-toolbar-item">
                 <button class="btn btn-xs map-toolbar-item-button button-none" id="getlink-toggle">
@@ -404,7 +405,7 @@ Reusable Accessible Mapping Platform
         Full Screen is used to collapse the departmental headers and footers to provide larger screen space for mapping.
         </p>
         <h3 class="h5">Usage</h3>
-        <p>Click the Full Screen button in the toolbar to hide departmental header and footer information. Select the Show Headers link to restore to default view.</p>
+        <p>Click the Full Screen button in the toolbar to hide departmental header and footer information. Select the Full Screen button again to restore to default view.</p>
     </div>
 </div>
 </details>
@@ -798,7 +799,7 @@ Reusable Accessible Mapping Platform
                 <details id="tabs1_1" data-panel-name="filterManager">
                     <summary class="">Datasets</summary>
                     <!-- SEARCH MAP BEGIN -->
-                    <div id="searchMapSection">
+                    <!--<div id="searchMapSection">-->
                         <!--<h2 id="searchMapHeader">
                         </h2>-->
                         <div id="searchMapSectionBody">
@@ -813,7 +814,7 @@ Reusable Accessible Mapping Platform
                             </ul>
                             <!--LAYER SECTION END-->
                         </div>
-                    </div>
+                    <!--</div>-->
                     <!-- SEARCH MAP END -->
                 </details>
                 <details id="tabs1_2" data-panel-name="datagrid">

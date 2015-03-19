@@ -24,14 +24,10 @@ Plateforme de cartographie accessible et réutilisable
 <!-- RAMP CSS Start -->
 <link href="css/lib/lib.css" rel="stylesheet" type="text/css" />
 <link href="css/theme.less.css" rel="stylesheet" type="text/css" />
+<!-- We have a esri-cleaned.css (src/css/esri/) that's being rolled into
+     our theme.css. It's a stripped down file with all the garbage removed.
+     -Alex -->
 <!-- RAMP CSS End -->
-
-<!-- EsriCSSStart -->
-<!--<link media="screen" href="http://js.arcgis.com/3.10/js/esri/css/esri.css"
-      rel="stylesheet" rel="stylesheet">-->
-<link media="screen" href="http://js.arcgis.com/3.10/js/dojo/dijit/themes/tundra/tundra.css"
-      type="text/css" rel="stylesheet">
-<!-- EsriCSSEnd -->
 
 <!-- ARCGIS API: make sure there is a script tag in the head node of the
                  document to avoid "Cannot read property 'insertBefore' of
@@ -154,6 +150,11 @@ Plateforme de cartographie accessible et réutilisable
                 </button>
                 <div id="basemapGallery">
                 </div>
+            </li>
+            <li class="map-toolbar-item">
+                <button class="btn btn-xs map-toolbar-item-button button-none _tooltip" title="[fr] Disable queries on all WMS layers" id="uglyGetFiToggle">
+                    <i class="fa fa-map-marker"></i><span class="on-right">[fr] Disable Queries</span>
+                </button>
             </li>
             <li class="map-toolbar-item">
                 <button class="btn btn-xs map-toolbar-item-button button-none" id="getlink-toggle">
@@ -403,7 +404,7 @@ Plateforme de cartographie accessible et réutilisable
         Le plein écran est utilisé pour masquer le haut et le bas de page du Ministère afin d’allouer plus d’espace à l’écran pour l’affichage cartographique.
         </p>
         <h3 class="h5">Utilisation</h3>
-        <p>Cliquez sur le bouton « Plein écran » dans la barre d’outils pour masquer le haut et le bas de page du Ministère. Cliquez sur le lien « Afficher haut de page » pour rétablir l’affichage par défaut.</p>
+        <p>[fr] Click the Full Screen button in the toolbar to hide departmental header and footer information. Select the Full Screen button again to restore to default view.</p>
     </div>
 </div>
 </details>
@@ -797,7 +798,7 @@ Plateforme de cartographie accessible et réutilisable
                 <details id="tabs1_1" data-panel-name="filterManager">
                     <summary class="">Ensembles de données</summary>
                     <!-- SEARCH MAP BEGIN -->
-                    <div id="searchMapSection">
+                    <!--<div id="searchMapSection">-->
                         <!--<h2 id="searchMapHeader">
                         </h2>-->
                         <div id="searchMapSectionBody">
@@ -812,7 +813,7 @@ Plateforme de cartographie accessible et réutilisable
                             </ul>
                             <!--LAYER SECTION END-->
                         </div>
-                    </div>
+                    <!--</div>-->
                     <!-- SEARCH MAP END -->
                 </details>
                 <details id="tabs1_2" data-panel-name="datagrid">
