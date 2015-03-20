@@ -4408,6 +4408,17 @@ main,
 footer {
   width: 100% !important;
 }
+#wb-sttl .ramp-brand {
+  display: table;
+  width: 100%;
+  margin-left: 1px;
+}
+#wb-sttl .ramp-brand > img {
+  display: table-cell;
+  float: right;
+  width: auto;
+  margin-right: -7px;
+}
 #wb-dtmd {
   padding: 6px 9px 0 10px;
   text-align: right;

@@ -1,4 +1,4 @@
-/*! ramp-pcar Plugins 13-03-2015 15:58:02 : v. 5.2.0-1 
+/*! ramp-pcar Plugins 20-03-2015 21:20:18 : v. 5.2.0-rc1 
  * 
  * RAMP GIS viewer - Elk; Sample of an implementation of RAMP 
  **/
