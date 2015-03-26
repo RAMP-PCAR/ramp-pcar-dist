@@ -226,7 +226,7 @@ Reusable Accessible Mapping Platform
                 </button>
             </li>
             <li class="map-toolbar-item">
-                <a class="btn btn-xs map-toolbar-item-button button-none wb-lbx lbx-modal" href="#map-export-modal" aria-controls="map-export-modal" id="map-export-toggle" disabled>
+                <a class="btn btn-xs map-toolbar-item-button button-none wb-lbx lbx-modal disabled" href="#map-export-modal" aria-disabled="true" aria-controls="map-export-modal" id="map-export-toggle">
                     <i class="fa fa-download"></i><span class="on-right">Map Export</span>
                 </a>
 
@@ -246,7 +246,7 @@ Reusable Accessible Mapping Platform
                                     <span class="wb-inv">Generating image. Please wait.</span>
                                 </div>
                                 <div class="map-export-image">
-                                    <img src="" alt="">
+                                    <img src="data:image/gif;base64,R0lGODlhAQABAAAAACwAAAAAAQABAAA=" alt="">
                                 </div>
                             </div>
                             <div class="map-export-controls">
@@ -263,7 +263,7 @@ Reusable Accessible Mapping Platform
                                         <!--<button class="btn btn-primary" type="button">
                                 <i class="fa fa-download"></i><span class="on-right">Download Image</span>
                             </button>-->
-                                        <a class="btn btn-primary" type="button" href="" target="_blank" download="">
+                                        <a class="btn btn-primary" href="" target="_blank" download="">
                                             <i class="fa fa-download"></i><span class="on-right">Download Image</span>
                                         </a>
                                         <!--<button class="btn btn-primary" type="button">
@@ -408,12 +408,12 @@ Reusable Accessible Mapping Platform
             </figure>
             <p>
                 There are three types of layers that can reside in the Dataset tab.
-                <ul>
-                    <li>Feature layers represent data that can be interacted with on the map, and viewed in the data grid.</li>
-                    <li>Static layers provide additional geographical context against the basemap.  They are not interactive and do not show in the data grid.</li>
-                    <li>WMS layers provide an overlay of data from a Web Map Service.  They can support a click interaction on the map, and do not show in the data grid.</li>
-                </ul>
             </p>
+            <ul>
+                <li>Feature layers represent data that can be interacted with on the map, and viewed in the data grid.</li>
+                <li>Static layers provide additional geographical context against the basemap.  They are not interactive and do not show in the data grid.</li>
+                <li>WMS layers provide an overlay of data from a Web Map Service.  They can support a click interaction on the map, and do not show in the data grid.</li>
+            </ul>
             <h4>Layer Visibility</h4>
             <p>Select the "eye" icon next to a dataset name to toggle the layer on or off.</p>
             <h4>Layer Bounding Box</h4>
